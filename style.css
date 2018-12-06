@@ -106,17 +106,20 @@ section h2 {
   background: #000;
 }
 
-.contact .item {
+.contact .item,
+.reference .item{
   display: flex;
   align-items: center;
 }
 
-.contact svg {
+.contact svg,
+.reference svg {
   width: 25px;
   height: 25px;
 }
 
-.contact .item span {
+.contact .item span,
+.reference .item span{
   margin-left: 10px;
 }
 
@@ -124,6 +127,7 @@ section h2 {
 
 .item .title {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -135,9 +139,16 @@ section h2 {
   color: rgb(189, 189, 192);
   font-size: 11px;
 }
-.item p{
+.item .content p{
   font-size: 13px;
 }
+.reference{
+  display: flex;
+}
+.reference .item{
+  margin-right: 10px;
+}
+
 
 main {
   background-color: white;
